@@ -3,3 +3,11 @@ class Solution:
         return n > 0 and (n & (n - 1)) == 0 and n % 3 == 1
 
         
+
+
+def isPowerOfFour(self, n: int) -> bool:
+    while n > 1:
+        if n % 4 != 0:
+            return False
+        n //= 4
+    return n == 1
